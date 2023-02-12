@@ -50,7 +50,6 @@
         const imgPopupWindow = document.querySelector('#img-popup');
         let flag = false;
         document.addEventListener('click', (event) => {
-            console.log(event.target);
             if ( event.target != imgPopupWindow && flag === true ) {
                 imgPopupWindow.style.display = "none";
                 flag = false;

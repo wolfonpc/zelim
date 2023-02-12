@@ -18,6 +18,7 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
+    font: inherit;
     font-size: 100%;
     vertical-align: baseline;
 }
@@ -59,7 +60,35 @@ a {
 
 /*---- Fonts ----*/
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* @font-face {
+    font-family: "PTserif";
+    src: url(/fonts/PTSerif-Regular.woff2),
+        url(/fonts/PTSerif-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "PTserif";
+    src: url(/fonts/PTSerif-Italic.woff2),
+        url(/fonts/PTSerif-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "PTserif";
+    src: url(/fonts/PTSerif-Bold.woff2),
+        url(/fonts/PTSerif-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "PTserif";
+    src: url(/fonts/PTSerif-BoldItalic.woff2),
+        url(/fonts/PTSerif-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+} */
 
 /*---- GENERAL ----*/
 
@@ -254,8 +283,8 @@ Simple mobile menu opening and closing (IE9 or higher)
     .nav ul a::after {
         content: '';
         position: absolute;
-        height: 5px;
-        width: 5px;
+        height: 7px;
+        width: 7px;
         background-color: #c6d1d7;
         left: 0;
         top: 50%;
@@ -265,10 +294,11 @@ Simple mobile menu opening and closing (IE9 or higher)
     }
 
     .nav ul a:hover::after {
-        height: 200%;
-        width: 95%;
+        height: 300%;
+        width: 75%;
         left: 1%;
         top: 55%;
+        transform: rotate(30deg) translateY(-50%);
     }
 
 
