@@ -7,6 +7,13 @@
     padding: 1em 0;
 }
 
+.pagination__back > a {
+    display: inline-block;
+    color: #fff;
+    background-color: #0e746f;
+    padding: 0.4em 0.5em;
+}
+
 .main {
     flex: 1 0 auto;
 }
