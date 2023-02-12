@@ -59,35 +59,7 @@ a {
 
 /*---- Fonts ----*/
 
-@font-face {
-    font-family: "PTserif";
-    src: url(/fonts/PTSerif-Regular.woff2),
-        url(/fonts/PTSerif-Regular.ttf);
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "PTserif";
-    src: url(/fonts/PTSerif-Italic.woff2),
-        url(/fonts/PTSerif-Italic.ttf);
-    font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "PTserif";
-    src: url(/fonts/PTSerif-Bold.woff2),
-        url(/fonts/PTSerif-Bold.ttf);
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: "PTserif";
-    src: url(/fonts/PTSerif-BoldItalic.woff2),
-        url(/fonts/PTSerif-BoldItalic.ttf);
-    font-weight: 700;
-    font-style: italic;
-}
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 
 /*---- GENERAL ----*/
 
@@ -100,7 +72,7 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 350px;
-    font-family: 'PTserif', serif;
+    font-family: 'PT Serif', serif;
 }
 
 img {
